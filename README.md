@@ -25,22 +25,22 @@ A simulated Small Office Home Office (SOHO) network built in Cisco Packet Tracer
 
 ## 🔧 What Was Built
 
-### Stage 1 — Basic LAN
+### Stage 1: Basic LAN
 Connected two PCs via a Cisco switch using copper straight-through cables. Verified connectivity with successful ICMP ping tests.
 
 ![Stage 1](screenshots/stage1/pinging-1-PC.png)
 
-### Stage 2 — VLAN Segmentation
+### Stage 2: VLAN Segmentation
 Configured two VLANs on the switch using Cisco IOS CLI commands. Assigned access ports per VLAN and verified isolation between IT and Staff networks.
 
 ![VLAN Isolation](screenshots/stage2/seperate-vlans.png)
 
-### Stage 3 — Inter-VLAN Routing (Router on a Stick)
+### Stage 3: Inter-VLAN Routing (Router on a Stick)
 Added a Cisco 2911 router and configured sub-interfaces on GigabitEthernet0/0 using 802.1Q encapsulation. Configured Fa0/5 as a trunk port on the switch to carry all VLANs to the router.
 
 ![Inter-VLAN Routing](screenshots/stage3/Confirm-connection.png)
 
-### Stage 4 — DHCP
+### Stage 4: DHCP
 Configured the router as a DHCP server with separate pools for each VLAN. Verified that all PCs received correct IP addresses automatically.
 
 ![DHCP](screenshots/stage4/switch-to-dhcp.png)
